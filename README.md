@@ -33,15 +33,18 @@
 > [!TIP]
 > Recuerda que si no pones el puente, (jumper) en el conector J5, no tendrás tensión en los servos, lo normal es ponerlo puenteando entre 5V y VCC, es decír, dejando libre el pin mas próximo a los MOS Fet de potencia.
 
+<br>
  
 > [!TIP]
 > Con esta información, y con la misma programación, no solo del firmware, si no tambien toda la información relativa a entradas y salidas, no solo puedes construir una impresora basada en esta tarjeta, tambien, puedes directamente, usarla como tarjeta adicional para controlar mas motores, servos, entradas o salidas, lo que la hace una opción buena y barata, o al menos a tener en cuenta, para controlar, por ejemplo, el cerramiento caliente de una impresora, o incluso un sistema de cambio de color, conectandolo a nuestra impresora Klipper existente, con un simple cable USB, te gusta esta idea, ¿eh?.
+
+<br>
 
 > [!WARNING]
 > Atención a las tensiones de alimentación, sobre todo si estás acostumbrado a impresoras alimentadas a 24 Voltios, que hoy es lo mas normal
 > RECUERDA, que la tarjeta RAMPS 1.6 se alimenta a 12 Voltios, si 12 no 24, por lo que si le aplicas 24 voltios la vas a freir, y probablemente al Arduino Mega tambien.
 
-
+<br>
 
 > [!IMPORTANT]
 > Como puede verse en el proyecto, no existen macros como start_print o end_print, ya que esas macros dependen totalmente de lo que tu quieras hacer con tu máquina, tampoco he puesto macros referentes a hacer el mallado de la cama, ni niguna que tenga que ver con las medidas de la impresora, ya que esas necesitas personalizarlas, si te hace falta informacion para hacerlo, tienes buenos ejemplos en:
@@ -51,7 +54,27 @@
 > https://github.com/Escrich/00-Phoenix-X86-00
 > 
 > https://github.com/Escrich/00-Acqua-00
-> 
-.
+
+<br>
+<br>
+
+- **Bueno, este es un trabajo que he hecho, pensando en que pueda servir de ayuda a los demás, recopilando y mostrando toda la información que he conseguido, o he generado, desde que me puse a revivir estas tarjetas, que tenía olvidadas en el fondo del cajón, si a alguien le sirve este trabajo, para no perder el tiempo que yo he necesitado perder, aunque sea uno solo, ya me doy por satisfecho, entonces mi objetivo se habrá cumplido, si necesitas ayuda, tienes dudas, o quieres comentar algo al respecto, además de que puedes hacerlo directamente aquí, recuerda que puedes encontrarme en las redes, y que estas son mis direcciones:**
+
+<br>
+
+www.github.com/escrich
+  
+
+https://t.me/escrich
+  
+  
+https://www.tiktok.com/@josemescrich
+
+
+https://www.youtube.com/@josem.escrich2610
+
+<sub>
+20251020 Jose M. Escrich 
+</sub>
 
 
