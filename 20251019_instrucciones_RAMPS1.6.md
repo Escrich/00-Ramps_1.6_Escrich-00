@@ -1,3 +1,6 @@
+## 20251019 Instrucciones para generar y cargar el firmware para RAMPS1.6
+
+
 https://github.com/Escrich/00-Ramps_1.6_Escrich-00
 
 - Primero hemos de crear el firmware usando KIAUH
