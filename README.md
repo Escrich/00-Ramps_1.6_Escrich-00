@@ -1,4 +1,4 @@
-# 00-Ramps_1.6_Escrich-00
+# Ramps 1.6 running Klipper by Escrich
 
 <br>
 <p align="left">
@@ -28,4 +28,21 @@
 15. Sensor de movimiento de filamento, Smart sensor
 16. Configuración para display, mas util en Marlin que en Klipper
 
-    Además se incluye instrucciones de forzado manual de motores, movimiento de servos, etc, así como completa información acerca de las entrads y salidas utilizadas.
+- Además se incluyen instrucciones de forzado manual de motores, movimiento de servos, etc, así como completa información acerca de las entradas y salidas utilizadas.
+
+> [!TIP]
+> Recuerda que si no pones el puente, (jumper) en el conector J5, no tendrás tensión en los servos, lo normal es ponerlo puenteando entre 5V y VCC, es decír, dejando libre el pin mas próximo a los MOS Fet de potencia.
+
+
+> [!IMPORTANT]
+> Como puede verse en el proyecto, no existen macros como start_print o end_print, ya que esas macros dependen totalmente de lo que tu quieras hacer con tu máquina, tampoco he puesto macros referentes a hacer el mallado de la cama, ni niguna que tenga que ver con las medidas de la impresora, ya que esas necesitas personalizarlas, si te hace falta informacion para hacerlo, tienes buenos ejemplos en:
+> 
+> https://github.com/Escrich/00-Cuore-00
+> 
+> https://github.com/Escrich/00-Phoenix-X86-00
+> 
+> https://github.com/Escrich/00-Acqua-00
+> 
+.
+
+
