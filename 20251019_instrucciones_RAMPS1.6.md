@@ -1,8 +1,8 @@
-## 20251019 Instrucciones para generar y cargar el firmware para RAMPS1.6
+## 20251020 Instrucciones para generar y cargar el firmware para RAMPS 1.6
 
 <br>
-<p align="center">
-<img src="https://github.com/Escrich/00-Ramps_1.6_Escrich-00/blob/main/Imagenes/Ramps_1.6_0026.jpg" alt='Programador Arduino as ISP' width='70%'>
+<p align="left">
+<img src="https://github.com/Escrich/00-Ramps_1.6_Escrich-00/blob/main/Imagenes/Ramps_1.6_0026.jpg" alt='Programador Arduino as ISP' width='90%'>
 </p>
 <br>
 
@@ -11,6 +11,29 @@ Una vez creado, **suponiendo que tu usuario sea biqu**, el firmware quedaría de
 en este caso una CB1 de BTT, en la siguiente dirección:
 
 **/home/biqu/klipper/out/klipper.elf**
+
+<br>
+<p align="center">
+<img src="https://github.com/Escrich/00-Ramps_1.6_Escrich-00/blob/main/Imagenes/Ramps_1.6_0024.PNG" alt='firmware' width='70%'>
+</p>
+<br>
+
+- Asi hemos de ir eligiendo opciones en Kiauh
+<br>
+<p align="center">
+<img src="https://github.com/Escrich/00-Ramps_1.6_Escrich-00/blob/main/Imagenes/Ramps_1.6_0027.png" alt='Kiauh' width='70%'>
+</p>
+
+- Y asi las caracteristicas del chip, siempre dentro de Kiauh, una vez hecho, al pulsar la tecla Q, nos dará a elegir si queremos grabar nuestro ajuste, y comenzará con el proceso de compilación del firmware.
+
+<br>
+<p align="center">
+<img src="https://github.com/Escrich/00-Ramps_1.6_Escrich-00/blob/main/Imagenes/Ramps_1.6_0023.PNG" alt='ajustes' width='70%'>
+</p>
+<br>
+
+
+
 
 - Ahora tenemos que conectar un programador de chips AVR, en mi caso un Arduino, programado como Arduino as ISP
 
@@ -49,7 +72,13 @@ Linea para programar el chip Atmega 2560 desde Linux, tras haber generado el arc
 avrdude -p atmega2560 -c arduino -P /dev/ttyACM0 -b 19200 -U flash:w:/home/biqu/klipper/out/klipper.elf
 ```
 
-Una vez hecho esto, ya tienes en tu Arduino Mega, la configuración de Klipper necessaria para hacer funcionar una tarjeta de control de impresora del tipo RAMPS 1.6
+<br>
+<p align="center">
+<img src="https://github.com/Escrich/00-Ramps_1.6_Escrich-00/blob/main/Imagenes/Ramps_1.6_0025.PNG" alt='firmware uploading' width='80%'>
+</p>
+<br>
+
+- Una vez hecho esto, ya tienes en tu Arduino Mega, la configuración de Klipper necessaria para hacer funcionar una tarjeta de control de impresora del tipo RAMPS 1.6
 
 - Por tanto tu definición del canal USB, que va a comunicar con la tarjeta Arduino Mega, debería ser muy similar a esto:
 
