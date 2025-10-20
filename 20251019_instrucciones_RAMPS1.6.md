@@ -1,7 +1,10 @@
 ## 20251019 Instrucciones para generar y cargar el firmware para RAMPS1.6
 
-
-https://github.com/Escrich/00-Ramps_1.6_Escrich-00
+<br>
+<p align="center">
+<img src="https://github.com/Escrich/00-Ramps_1.6_Escrich-00/blob/main/Imagenes/Ramps_1.6_0026.jpg" alt='Programador Arduino as ISP' width='70%'>
+</p>
+<br>
 
 - Primero hemos de crear el firmware usando KIAUH
 Una vez creado, **suponiendo que tu usuario sea biqu**, el firmware quedaría dentro de tu tarjeta de control, 
@@ -9,7 +12,7 @@ en este caso una CB1 de BTT, en la siguiente dirección:
 
 **/home/biqu/klipper/out/klipper.elf**
 
-- Ahora tenemos que conectar un programador de chis AVR, en mni caso un Arduino, programado como Arduino as ISP
+- Ahora tenemos que conectar un programador de chips AVR, en mi caso un Arduino, programado como Arduino as ISP
 
 Asi vemos que está reconociendo el programador de AVR chips:
 
